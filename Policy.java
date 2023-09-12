@@ -1,6 +1,6 @@
-public class Policy_Account                  // Class name
+public class Policy                          // Class name
 {
-   private int Policy_Number;             // Policy Number
+   private int Policy_Number;                // Policy Number
    private String Provider_Name;             // Provider Name
    private String Holder_First_Name;         // Policyholder’s First Name
    private String Holder_Last_Name;          // Policyholder’s Last Name
@@ -125,7 +125,5 @@ public class Policy_Account                  // Class name
    {
       return Policy_Total_Cost + 600;
    }
-   
-   
    
 }

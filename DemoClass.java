@@ -5,7 +5,7 @@ public class DemoClass
    public static void main(String[] args)
    {
       Scanner keyboard = new Scanner(System.in);
-      Policy_Account policy = new Policy_Account();
+      Policy policy = new Policy();
       
       System.out.print("Please enter the Policy Number: ");
       policy.Get_Policy_Number(keyboard.nextInt());
