@@ -11,7 +11,30 @@ public class Policy                          // Class name
    private double Holder_BMI;                // Policyholder’s BMI
    private double Policy_Total_Cost;         // Policy Total Cost
    
-   ///////////////////////////////////////
+   //constructors
+   public Policy()
+   {
+      Policy_Number = 0;
+      Provider_Name = "";
+      Holder_First_Name = "";
+      Holder_Last_Name = "";
+      Holder_Age = 0;
+      Holder_Smoke_Status = "";
+      Holder_Height = 0;
+      Holder_Weight = 0;
+   }
+   
+   public Policy(int P, String N, String F, String L,int A, String SM, double H, double W)
+   {
+      Policy_Number = P;
+      Provider_Name = N;
+      Holder_First_Name = F;
+      Holder_Last_Name = L;
+      Holder_Age = A;
+      Holder_Smoke_Status = SM;
+      Holder_Height = H;
+      Holder_Weight = W;
+   }
    
    public void Get_Policy_Number(int P) // @param
    {
@@ -38,9 +61,9 @@ public class Policy                          // Class name
       Holder_Age = A;
    }
    
-   public void Get_Holder_Smoke_Status(String S) // @param
+   public void Get_Holder_Smoke_Status(String SM) // @param
    {
-      Holder_Smoke_Status = S;
+      Holder_Smoke_Status = SM;
    }
    
    public void Get_Holder_Height(double H) // @param
@@ -106,13 +129,13 @@ public class Policy                          // Class name
       return Holder_BMI; // @return
    }
    
-   public void Set_Policy_Price(int A, String S, double B) // @param
+   public void Set_Policy_Price(int A, String SM, double B) // @param
    {
       if (A > 50) {
          Policy_Total_Cost = Policy_Total_Cost + 75;
       }
       
-      if (S == "smoker") {
+      if (SM == "smoker") {
          Policy_Total_Cost = Policy_Total_Cost + 100;
       }
       
