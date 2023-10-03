@@ -45,10 +45,10 @@ public class DemoClass
          weight = inputFile.nextDouble();
          
          // Calculating number of smoker and non-smoker
-         /*if(smokingStatus == "smoker")
+         if(smokingStatus == "smoker")
             smoker++;
          if(smokingStatus != "smoker")
-            non_smoker++;*/
+            non_smoker++;
          
          // If there is a line between two policy input, skip the line so input can be accurately assigned to their variable
          if(inputFile.hasNext())
@@ -79,8 +79,8 @@ public class DemoClass
       }
       
       // Output number of smoker and non-smoker
-      //System.out.println("\nThe number of policies with a smoker is: " + smoker);
-      //System.out.print("The number of policies with a non-smoker is: " + non_smoker);
+      System.out.println("\nThe number of policies with a smoker is: " + smoker);
+      System.out.print("The number of policies with a non-smoker is: " + non_smoker);
       // Close the file
       inputFile.close();
       
