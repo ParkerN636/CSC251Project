@@ -149,4 +149,9 @@ public class Policy                          // Class name
       return Policy_Total_Cost + 600; // @return
    }
    
+   public void toString ()
+   {
+   
+   }
+   
 }
